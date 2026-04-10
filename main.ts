@@ -8,80 +8,81 @@
 // variables
 let sprite: game.LedSprite = null
 let loopCounter = 0
+let timeoute = 500
 
 // setup
 basic.clearScreen()
-basic.pause(500)
 basic.showIcon(IconNames.Happy)
 
-// the clockwise perimeter movement
+// A - the clockwise perimeter movement
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
     sprite = game.createSprite(0, 0)
 
     loopCounter = 0
     while (loopCounter < 4) {
-        basic.pause(500)
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.X, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 0
     while (loopCounter < 4) {
-        basic.pause(500)
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 4
     while (loopCounter > 0) {
-        basic.pause(500)
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.X, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 4
     while (loopCounter > 0) {
-        basic.pause(500)
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
+        basic.pause(timeoute)
     }
 
     sprite.delete()
     basic.showIcon(IconNames.Happy)
 })
 
-// the clockwise perimeter movement counter clockwise
+// B - counter clockwise perimeter movement
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     sprite = game.createSprite(0, 0)
 
     loopCounter = 0
     while (loopCounter < 4) {
-        basic.pause(500)
+       
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 0
     while (loopCounter < 4) {
-        basic.pause(500)
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.X, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 4
     while (loopCounter > 0) {
-        basic.pause(500)
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
+        basic.pause(timeoute)
     }
 
     loopCounter = 4
     while (loopCounter > 0) {
-        basic.pause(500)
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.X, loopCounter)
+        basic.pause(timeoute)
     }
 
     sprite.delete()
