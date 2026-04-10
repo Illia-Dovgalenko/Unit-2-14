@@ -20,28 +20,29 @@ input.onButtonPressed(Button.A, function () {
     sprite = game.createSprite(0, 0)
 
     loopCounter = 0
-    while (loopCounter < 4) {
+    while (loopCounter <= 4) {
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.X, loopCounter)
         basic.pause(timeoute)
     }
 
     loopCounter = 0
-    while (loopCounter < 4) {
+    while (loopCounter <= 4) {
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
         basic.pause(timeoute)
+        
     }
 
     loopCounter = 4
-    while (loopCounter > 0) {
+    while (loopCounter >= 0) {
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.X, loopCounter)
         basic.pause(timeoute)
     }
 
     loopCounter = 4
-    while (loopCounter > 0) {
+    while (loopCounter >= 0) {
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
         basic.pause(timeoute)
@@ -57,29 +58,28 @@ input.onButtonPressed(Button.B, function () {
     sprite = game.createSprite(0, 0)
 
     loopCounter = 0
-    while (loopCounter < 4) {
-       
+    while (loopCounter <= 4) {
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
         basic.pause(timeoute)
     }
 
     loopCounter = 0
-    while (loopCounter < 4) {
+    while (loopCounter <= 4) {
         loopCounter = loopCounter + 1
         sprite.set(LedSpriteProperty.X, loopCounter)
         basic.pause(timeoute)
     }
 
     loopCounter = 4
-    while (loopCounter > 0) {
+    while (loopCounter >= 0) {
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.Y, loopCounter)
         basic.pause(timeoute)
     }
 
     loopCounter = 4
-    while (loopCounter > 0) {
+    while (loopCounter >= 0) {
         loopCounter = loopCounter - 1
         sprite.set(LedSpriteProperty.X, loopCounter)
         basic.pause(timeoute)
